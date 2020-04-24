@@ -28,13 +28,19 @@ int min_vuelto(int monto) {
 	index++;
   }
 
-
+  if(redondeo(monto) > monto) {
+  	cout << "El redondeo beneficio a Don Tito en " << (redondeo(monto) - monto) <<  "$ pesos" << endl;
+  	return cantidad_monedas;
+  }
+  
+    cout << "El redondeo no beneficio a Don tito" << endl;
+    
   return cantidad_monedas;
 }
 
 
 int main() {
-  cout << min_vuelto(757);
+  cout << "La minima cantidad de monedas devueltas es " << min_vuelto(757);
   return 0;
 }
 
