@@ -1,13 +1,11 @@
 function min_vuelto(divisas, monto) {
-    var shorted_arr = [],
-        array_cantidad = [];
+    var shorted_arr = [];
 
     divisas.forEach(cur => {
 
         if (cur <= monto) {
 
             shorted_arr.push(cur);
-            array_cantidad.push(0);
 
         }
     });
