@@ -33,3 +33,24 @@ unsigned factorial(unsigned n, int j = 1) {
  return n > 0 ? n : 1;
 }
 
+
+unsigned redondear(unsigned n) {
+	
+	unsigned flag = 0;
+	
+	while((n%10)) {
+	 n--;
+	 flag++;
+	}
+	return (flag < 5) ? n : (n+10);
+}
+
+unsigned truncar(unsigned n) {
+	while((n%10)) {
+	 n--;
+	}
+  return n;
+}
+
+
+
